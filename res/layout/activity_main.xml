@@ -4,16 +4,77 @@
         android:layout_height="match_parent"  
         tools:context=".MainActivity" >  
       
+       
+        <TextView
+            android:id="@+id/titreMain"
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:text="@string/titreMain"
+            android:layout_centerHorizontal="true" 
+            android:textStyle="bold"
+            />
+                
+        <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space1"
+            android:text="@string/space"
+            android:layout_below="@+id/titreMain"
+            />
+        <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space2"
+            android:text="@string/space"
+            android:layout_below="@+id/space1"
+            />
+        
+        <TextView
+            android:id="@+id/infoSpin1"
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:text="@string/info1"
+            android:layout_below="@+id/space2"
+            />
+        
+        
         <com.example.cocktail.MultiSelectionSpinner  
             android:id="@+id/mySpinner1"  
             android:layout_width="match_parent"  
             android:layout_height="wrap_content" 
+            android:layout_below="@+id/infoSpin1"
             />  
+            
+        <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space3"
+            android:text="@string/space"
+            android:layout_below="@+id/mySpinner1"
+            />
+
+                <TextView
+            android:id="@+id/infoSpin2"
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:text="@string/info2"
+            android:layout_below="@+id/space3"
+            />
+                
+                
+        <com.example.cocktail.MultiSelectionSpinner  
+            android:id="@+id/mySpinner2"  
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/infoSpin2"
+            /> 
+            
+        
         <Button  
             android:id="@+id/button1"  
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
-            android:layout_below="@+id/mySpinner1"  
+            android:layout_below="@+id/mySpinner2"  
             android:layout_centerHorizontal="true"  
             android:layout_marginTop="118dp"  
             android:text="@string/hello_world"   
