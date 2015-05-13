@@ -71,12 +71,12 @@
             
         
         <Button  
-            android:id="@+id/button1"  
+            android:id="@+id/BoutonConsult"  
             android:layout_width="wrap_content"  
             android:layout_height="wrap_content"  
             android:layout_below="@+id/mySpinner2"  
             android:layout_centerHorizontal="true"  
             android:layout_marginTop="118dp"  
-            android:text="@string/hello_world"   
+            android:text="@string/boutonConsult"   
             android:onClick="onClick"/>  
     </RelativeLayout>  
