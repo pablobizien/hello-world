@@ -2,7 +2,8 @@
         xmlns:tools="http://schemas.android.com/tools"  
         android:layout_width="match_parent"  
         android:layout_height="match_parent"  
-        tools:context=".MainActivity" >  
+        tools:context=".MainActivity"
+        android:background="@drawable/eau_limpide" >  
       
        
         <TextView
@@ -30,19 +31,21 @@
             />
         
           <ImageView
-        android:id="@+id/android_picture"
+        android:id="@+id/cocktail_picture"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/android"
+        android:src="@drawable/cocktail"
+       	android:contentDescription="@string/image_content_description"
+       	android:layout_below="@+id/space2"
         />
-          
+         
           
         <TextView
             android:id="@+id/infoSpin1"
             android:layout_width="match_parent"  
             android:layout_height="wrap_content"
             android:text="@string/info1"
-            android:layout_below="@+id/space2"
+            android:layout_below="@+id/cocktail_picture"
             />
         
         

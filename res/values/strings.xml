@@ -9,5 +9,6 @@
     <string name="boutonConsult">Que réaliser ?</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_proposition_">Proposition_Activity</string>
+    <string name="image_content_description">test</string>
 
 </resources>
