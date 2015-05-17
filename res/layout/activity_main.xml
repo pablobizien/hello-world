@@ -13,6 +13,8 @@
             android:text="@string/titreMain"
             android:layout_centerHorizontal="true" 
             android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
             />
                 
         <TextView
@@ -22,13 +24,7 @@
             android:text="@string/space"
             android:layout_below="@+id/titreMain"
             />
-        <TextView
-            android:layout_width="match_parent"  
-            android:layout_height="wrap_content"
-            android:id="@+id/space2"
-            android:text="@string/space"
-            android:layout_below="@+id/space1"
-            />
+        
         
           <ImageView
         android:id="@+id/cocktail_picture"
@@ -36,16 +32,25 @@
         android:layout_height="wrap_content"
         android:src="@drawable/cocktail"
        	android:contentDescription="@string/image_content_description"
-       	android:layout_below="@+id/space2"
+       	android:layout_below="@+id/space1"
+       	android:padding="10dp"
         />
          
+          <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space2"
+            android:text="@string/space"
+            android:layout_below="@+id/cocktail_picture"
+            />
           
         <TextView
             android:id="@+id/infoSpin1"
             android:layout_width="match_parent"  
             android:layout_height="wrap_content"
             android:text="@string/info1"
-            android:layout_below="@+id/cocktail_picture"
+            android:layout_below="@+id/space2"
+            android:padding="5dp"
             />
         
         
@@ -54,6 +59,7 @@
             android:layout_width="match_parent"  
             android:layout_height="wrap_content" 
             android:layout_below="@+id/infoSpin1"
+            android:padding="5dp"
             />  
             
         <TextView
@@ -62,6 +68,7 @@
             android:id="@+id/space3"
             android:text="@string/space"
             android:layout_below="@+id/mySpinner1"
+            android:padding="5dp"
             />
 
                 <TextView
@@ -78,6 +85,7 @@
             android:layout_width="match_parent"  
             android:layout_height="wrap_content" 
             android:layout_below="@+id/infoSpin2"
+            android:padding="5dp"
             /> 
             
         
@@ -87,7 +95,7 @@
             android:layout_height="wrap_content"  
             android:layout_below="@+id/mySpinner2"  
             android:layout_centerHorizontal="true"  
-            android:layout_marginTop="118dp"  
+            android:layout_marginTop="40dp"  
             android:text="@string/boutonConsult"   
             android:onClick="onClick"/>  
     </RelativeLayout>  

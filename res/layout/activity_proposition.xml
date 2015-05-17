@@ -1,12 +1,104 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        tools:context=".Proposition_Activity"
+        android:background="@drawable/eau_limpide" >  
+      
+       
+        <TextView
+            android:id="@+id/titreProp"
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:text="@string/titreProp"
+            android:layout_centerHorizontal="true" 
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            />
+                
+        <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space1prop"
+            android:text="@string/space"
+            android:layout_below="@+id/titreProp"
+            />
+        <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:id="@+id/space2prop"
+            android:text="@string/space"
+            android:layout_below="@+id/space1prop"
+            />
+     
+	        
+	        <ImageView
+		        android:id="@+id/cocktail1_picture"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/cocktail"
+		       	android:contentDescription="@string/image_content_description"
+		       	android:layout_below="@+id/space2prop"
+		       	android:padding="3dp"
+		        />
+	         
+	      
+	    
+	      	    <TextView
+		            android:id="@+id/NomCocktail1"
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"
+		            android:text="@string/nomCocktail1"
+		            android:layout_below="@+id/space2prop"
+		            android:layout_toRightOf="@+id/cocktail1_picture"
+		            android:layout_alignParentRight="true"
+		            android:padding="3dp"
+		             android:textStyle="bold"
+		             android:clickable="true"
+		             android:onClick="onClickCocktail"
+	            	/>
+	        
+	        	<TextView
+		            android:layout_width="match_parent"  
+		            android:layout_height="wrap_content"
+		            android:id="@+id/descCockail1"
+		            android:text="@string/descCocktail1"
+		            android:layout_toRightOf="@+id/cocktail1_picture"
+		         	android:layout_alignParentRight="true"
+		            android:layout_below="@+id/NomCocktail1"
+		            android:padding="3dp"
+		            android:textSize="11sp"
+		            />
+		
+	        	
+	        	<TextView
+		            android:layout_width="match_parent"  
+		            android:layout_height="wrap_content"
+		            android:id="@+id/space3prop"
+		            android:text="@string/space"
+		            android:layout_below="@+id/descCockail1"
+		            />
+	        	    
+                <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:text="@string/info2"
+            android:layout_below="@+id/space3prop"
+            />
+                
+                
+     
+            
+        
+        <Button  
+            android:id="@+id/BoutonRetour"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@+id/test"  
+            android:layout_centerHorizontal="true"  
+            android:layout_marginTop="118dp"  
+            android:text="@string/boutonRetour"   
+            android:onClick="onClick"/>  
+    </RelativeLayout>  

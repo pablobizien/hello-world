@@ -10,5 +10,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_proposition_">Proposition_Activity</string>
     <string name="image_content_description">test</string>
+    <string name="titreProp">VOS COCKTAILS RÉALISABLES</string>
+    <string name="nomCocktail1">Le Bibi Maggle</string>
+    <string name="descCocktail1">Du Rhum, des femmes et de la bière nom de dieu !</string>
+    <string name="boutonRetour">Retour</string>
 
 </resources>
